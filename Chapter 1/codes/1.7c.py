@@ -11,7 +11,7 @@ n = np.arange(-10, 11, 1)
 # Generate data for the subplots
 y1 = (0.5)**n * unit_step(n-3)
 y2 = (0.5)**(-n) * unit_step(-n-3)
-y3 = y1 + y2
+y3 = 0.5 * (y1 + y2)
 
 # Create a figure with 3 vertical subplots
 fig, axs = plt.subplots(3, 1, figsize=(8, 15))
